@@ -1,0 +1,1253 @@
+CODE C#
+AREA & PERIMETER
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    { 
+        
+       Console.WriteLine("Enter length:");
+        int length = Convert.ToInt16(Console.ReadLine());
+        
+        Console.WriteLine("Enter breadth:");
+        int breadth = Convert.ToInt16(Console.ReadLine());
+        
+        int area = length * breadth;
+        int perimeter = 2*(length + breadth);
+        
+        Console.WriteLine("The area is {0}m squared", area);
+        Console.WriteLine("The perimeter is {0}m",perimeter);
+        
+    
+
+    }//main method
+}//class
+
+AREA & PERIMETER OF TRAPEZIUM
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    { 
+        
+        Console.WriteLine("Enter A :");
+        int A = Convert.ToInt16(Console.ReadLine());
+
+        Console.WriteLine("Enter B:");
+        int B = Convert.ToInt16(Console.ReadLine());
+        
+        Console.WriteLine("Enter Height:");
+        int Height = Convert.ToInt16(Console.ReadLine());
+
+        Console.WriteLine("Enter C:");
+        int C = Convert.ToInt16(Console.ReadLine());
+
+        Console.WriteLine("Enter D:");
+        int D = Convert.ToInt16(Console.ReadLine());
+        
+        int area = A + B/2* Height ;
+        int perimeter = A + B + C + D;
+        
+        Console.WriteLine("The area of Trapezium is {0}m squared", area);
+        Console.WriteLine("The perimeter of Trapezium is {0}m",perimeter);
+        
+    
+
+    }//main method
+}//class
+
+AREA & PERIMETER OF TRIANGLE
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    { 
+    
+       Console.WriteLine("Enter b:");
+        double b = Convert.ToDouble(Console.ReadLine());
+        
+        Console.WriteLine("Enter h:");
+        double h = Convert.ToDouble(Console.ReadLine());
+        
+        Console.WriteLine("Enter a:");
+        double a = Convert.ToDouble(Console.ReadLine());
+        
+        Console.WriteLine("Enter c:");
+        double c = Convert.ToDouble(Console.ReadLine());
+        
+        double area = 0.5*b*h;
+        double perimeter = a+b+c;
+        
+        Console.WriteLine("The area is {0}m squared", area);
+        Console.WriteLine("The perimeter is {0}m",perimeter);
+  
+    }//main method
+}//class
+
+CLASS ANIMAL
+using System;
+
+class Animal
+{
+    public string name {get; set;}
+    public int age {get; set;}
+    
+    public void Eat()
+{
+    Console.WriteLine("{0} is eating!",name);
+}
+}
+
+class Dog : Animal
+{
+    public void Bark ()
+    {
+    Console.WriteLine("{0} is barking!",name);
+    }
+}
+
+class Program
+{
+static void Main(string [] args)
+{
+    Dog myDog = new Dog();
+    myDog.name = "Buddy";
+    myDog.age = 4;
+    
+    Console.WriteLine("{0} is {1} years old",myDog.name,myDog.age);
+    myDog.Eat();
+    
+    myDog.Bark();
+    
+    Console.ReadLine();
+    
+}//main method
+}//class
+
+BMI CALCULATION
+using System;
+
+class Program
+{
+    static void Main(string [] args)
+{
+    Console.WriteLine("Enter Weight(Kg):");
+    double Weight =Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("Enter Height(m):");
+    double Height =Convert.ToDouble(Console.ReadLine());
+    
+
+    double bmi = Weight/(Height*Height);
+    
+
+     
+
+if(bmi <16)
+{ 
+    Console.WriteLine("Your BMI is {0} - Severe Underweight",bmi);
+}
+else if(bmi >=16 && bmi <18.5)
+{
+   Console.WriteLine("Your BMI is {0} - Underweight",bmi);
+}
+if(bmi >=18.5 && bmi <25)
+{
+    Console.WriteLine("Your BMI is {0} - Normal",bmi);
+}
+else if(bmi >=25 && bmi <30)
+{
+    Console.WriteLine("Your BMI is {0} - Overweight",bmi);
+}
+else if(bmi >=30 && bmi <40)
+{
+    Console.WriteLine("Your BMI is {0} - Obese",bmi);
+}
+else if(bmi >40)
+{
+    Console.WriteLine("Your BMI is {0} - Go To The Doctor",bmi);
+}
+
+
+
+}//main method
+}//class
+
+
+AREA & PERIMETER
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    { 
+        
+       Console.WriteLine("Enter length:");
+        int length = Convert.ToInt16(Console.ReadLine());
+        
+        Console.WriteLine("Enter breadth:");
+        int breadth = Convert.ToInt16(Console.ReadLine());
+        
+        int area = length * breadth;
+        int perimeter = 2*(length + breadth);
+        
+        Console.WriteLine("The area is {0}m squared", area);
+        Console.WriteLine("The perimeter is {0}m",perimeter);
+        
+    
+
+    }//main method
+}//class
+
+CALCULATING MARKS
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+{
+    Console.WriteLine("Enter mark for English:");
+    int m1 = Convert.ToInt16(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Mathematics:");
+    int m2 = Convert.ToInt16(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Science:");
+    int m3 = Convert.ToInt16(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Economics:");
+    int m4 = Convert.ToInt16(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Accounting:");
+    int m5 = Convert.ToInt16(Console.ReadLine());
+
+     Console.WriteLine("Total:{0}",sumMethod(m1,m2,m3,m4,m5));
+
+
+
+    int total = m1+m2+m3+m4+m5;
+    
+   if(total>0 && total<=250)
+    {
+        Console.WriteLine("Fail",total);
+    }
+    else if(total>=250 && total<=500)
+    {
+        Console.WriteLine("Pass",total);
+    }
+
+   
+
+}//main method
+
+    static int sumMethod(int m1, int m2, int m3, int m4, int m5)
+{
+    return m1+m2+m3+m4+m5;
+}
+
+
+}//class
+
+
+ARRAYS
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+{ 
+        string [] names = new string [5];
+    names[0] = "Christo";
+    names[1] = "Zee";
+    names[2] = "Emma";
+    names[3] = "Banele";
+    names[4] = "Success";
+
+        string [] subj = new string[5];
+    subj[0] = "Maths";
+    subj[1] = "Economics";
+    subj[2] = "Accounting";
+    subj[3] = "English";
+    subj[4] = "Business Studies";
+    
+    int [] results = new int[5];
+    results[0] = 50;
+    results[1] = 65;
+    results[2] = 99;
+    results[3] = 75;
+    results[4] = 98;
+    
+Console.WriteLine("Student Name:{0} - Subject:{1} - Mark: {2}%", names[0], subj[0],results[0]);
+
+Console.WriteLine("Student Name:{0} - Subject:{1} - Mark: {2}%", names[1], subj[1],results[1]);
+
+Console.WriteLine("Student Name:{0} - Subject:{1} - Mark: {2}%", names[2], subj[2],results[2]);
+
+Console.WriteLine("Student Name:{0} - Subject:{1} - Mark: {2}%", names[3], subj[3],results[3]);
+
+Console.WriteLine("Student Name:{0} - Subject:{1} - Mark: {2}%", names[4], subj[4],results[4]);
+
+}//main method
+}//class
+
+CURRENCY CONVERTER
+using System;
+
+class Program
+{
+        static void Main(String [] args)
+    {
+        Console.WriteLine();
+        Console.WriteLine("WELCOME TO EMMAS CURRENCY CONVERTER");
+        Console.WriteLine();
+        
+        {
+        Console.WriteLine("Please Enter Amount in Rands:");
+        double rands = Convert.ToDouble(Console.ReadLine());
+        
+        double dollars = rands/19.43;
+        
+        Console.WriteLine("Dollar Value: ${0}",dollars);
+        }
+
+}//main method
+}//class
+
+FIBANACCI SEQUENCE2
+
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    { 
+        Console.WriteLine("Enter Number of terms in Sequence:");
+        int n = Convert.ToInt16(Console.ReadLine());
+        
+        int a = 0;
+        int b = 1;
+        
+        
+        for(int i=0; i<n; i++)
+        {
+	    Console.Write(a+",");
+            int c = a+b;
+            a = b;
+            b = c;
+        }
+
+    }//main method
+}//class
+
+FIBANACCI SEQUENCE
+
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    { 
+        Console.WriteLine("Fibanacci Sequence:");
+        
+        int count = 20;
+        
+        int a = 0;
+        int b = 1;
+        
+        Console.Write($"{a},{b}");
+        
+        for(int i=2; i<count; i++)
+        {
+            int c = a+b;
+            Console.Write($", {c}");
+            a = b;
+            b = c;
+        }
+        Console.ReadLine();
+
+    }//main method
+}//class
+
+ID NUMBER CALCULATION
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string [] args)
+    {
+
+       string filepath = "details.txt";
+
+       using(StreamWriter sw = new StreamWriter(filepath))
+        {
+
+        Console.WriteLine("Enter 13 Digit ID Number:");
+        string id = Console.ReadLine();
+	
+
+        sw.WriteLine(id);
+
+        string first6 = id.Substring(0,6);
+
+        int year = Convert.ToInt16(first6.Substring(0,2));
+
+        string y = first6.Substring(0,2);
+        sw.WriteLine("Year of Birth {0}",y);
+
+        string month = first6.Substring(2,2);
+        int mnth = Convert.ToInt16(month);
+        sw.WriteLine("Month of Birth {0}",month);
+
+        string day = first6.Substring(4,2);
+        sw.WriteLine("Day of Birth {0}",day);
+
+        string yr = year + " ";
+
+        if(year >= 0 && year <=23)
+        {
+            yr = "20" + "0" + year;
+        }
+        else if(year <= 99)
+        {
+            yr = "19"+ year;
+        }
+
+        string birthYear = year + "";
+        int yob = 0;
+        int age = 0;
+
+        if(year >= 0 && year <=23)  
+        {
+            birthYear = "20" + "0" + year;
+            yob = Convert.ToInt16(birthYear);
+            age = 2023 - yob;
+            sw.WriteLine("Age is {0}",age);
+        }  
+        else if(year <= 99 && year > 23)
+        {
+            birthYear = "19" + year;
+            yob = Convert.ToInt16(birthYear);
+            age = 2023 - yob;
+            sw.WriteLine("Age is {0}",age);
+        }
+       sw.WriteLine("Your birthday is {0}/{1}/{2}",day,month,y);
+
+    
+
+       switch(mnth)
+            {
+            case 01 : sw.WriteLine("Your birthday is on {0} January {1}", day, yr); break;
+            case 02 : sw.WriteLine("Your birthday is on {0} February {1}", day, yr); break;
+            case 03 : sw.WriteLine("Your birthday is on {0} March {1}", day, yr); break;
+            case 04 : sw.WriteLine("Your birthday is on {0} April {1}", day, yr); break;
+            case 05 : sw.WriteLine("Your birthday is on {0} May {1}", day, yr); break;
+            case 06 : sw.WriteLine("Your birthday is on {0} June {1}", day, yr); break;
+            case 07 : sw.WriteLine("Your birthday is on {0} July {1}", day, yr); break;
+            case 08 : sw.WriteLine("Your birthday is on {0} August {1}", day, yr); break;
+            case 09 : sw.WriteLine("Your birthday is on {0} September {1}", day, yr); break;
+            case 10 : sw.WriteLine("Your birthday is on {0} October {1}", day, yr); break;
+            case 11 : sw.WriteLine("Your birthday is on {0} November {1}", day, yr); break;
+            case 12 : sw.WriteLine("Your birthday is on {0} December {1}", day, yr); break;
+       
+             }//sw
+        }
+        
+       using(StreamReader sr = new StreamReader(filepath))
+       {
+    	string line;
+	Console.WriteLine("Reading file : {0}",filepath);
+	
+	while((line = sr.ReadLine()) !=null)
+	{
+		Console.WriteLine(line);
+    }
+
+	Console.WriteLine("Read file {0} complete!", filepath);
+	
+       }   
+
+
+    
+    }//main method
+}//class
+
+
+ID SUBSTRING
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string [] args)
+    {
+
+       string filepath = "details.txt";
+
+       using(StreamWriter sw = new StreamWriter(filepath))
+        {
+
+        Console.WriteLine("Enter 13 Digit ID Number:");
+        string id = Console.ReadLine();
+	
+
+        sw.WriteLine(id);
+
+        string first6 = id.Substring(0,6);
+
+        int year = Convert.ToInt16(first6.Substring(0,2));
+
+        string y = first6.Substring(0,2);
+        sw.WriteLine("Year of Birth {0}",y);
+
+        string month = first6.Substring(2,2);
+        int mnth = Convert.ToInt16(month);
+        sw.WriteLine("Month of Birth {0}",month);
+
+        string day = first6.Substring(4,2);
+        sw.WriteLine("Day of Birth {0}",day);
+
+        string yr = year + " ";
+
+        if(year >= 0 && year <=23)
+        {
+            yr = "20" + "0" + year;
+        }
+        else if(year <= 99)
+        {
+            yr = "19"+ year;
+        }
+
+        string birthYear = year + "";
+        int yob = 0;
+        int age = 0;
+
+        if(year >= 0 && year <=23)  
+        {
+            birthYear = "20" + "0" + year;
+            yob = Convert.ToInt16(birthYear);
+            age = 2023 - yob;
+            sw.WriteLine("Age is {0}",age);
+        }  
+        else if(year <= 99 && year > 23)
+        {
+            birthYear = "19" + year;
+            yob = Convert.ToInt16(birthYear);
+            age = 2023 - yob;
+            sw.WriteLine("Age is {0}",age);
+        }
+       sw.WriteLine("Your birthday is {0}/{1}/{2}",day,month,y);
+
+    
+
+       switch(mnth)
+            {
+            case 01 : sw.WriteLine("Your birthday is on {0} January {1}", day, yr); break;
+            case 02 : sw.WriteLine("Your birthday is on {0} February {1}", day, yr); break;
+            case 03 : sw.WriteLine("Your birthday is on {0} March {1}", day, yr); break;
+            case 04 : sw.WriteLine("Your birthday is on {0} April {1}", day, yr); break;
+            case 05 : sw.WriteLine("Your birthday is on {0} May {1}", day, yr); break;
+            case 06 : sw.WriteLine("Your birthday is on {0} June {1}", day, yr); break;
+            case 07 : sw.WriteLine("Your birthday is on {0} July {1}", day, yr); break;
+            case 08 : sw.WriteLine("Your birthday is on {0} August {1}", day, yr); break;
+            case 09 : sw.WriteLine("Your birthday is on {0} September {1}", day, yr); break;
+            case 10 : sw.WriteLine("Your birthday is on {0} October {1}", day, yr); break;
+            case 11 : sw.WriteLine("Your birthday is on {0} November {1}", day, yr); break;
+            case 12 : sw.WriteLine("Your birthday is on {0} December {1}", day, yr); break;
+       
+             }//sw
+        }
+        
+       using(StreamReader sr = new StreamReader(filepath))
+       {
+    	string line;
+	Console.WriteLine("Reading file : {0}",filepath);
+	
+	while((line = sr.ReadLine()) !=null)
+	{
+		Console.WriteLine(line);
+    }
+
+	Console.WriteLine("Read file {0} complete!", filepath);
+	
+       }   
+
+
+    
+    }//main method
+}//class
+
+
+If statement mark
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+{ 
+    Console.WriteLine("Enter mark");
+        int mark = Convert.ToInt16(Console.ReadLine());
+        
+    if(mark>=90 && mark<=100)
+    {
+        Console.WriteLine("A");
+    }
+    else if(mark>=80 && mark<=89)
+    {
+        Console.WriteLine("B");
+    }
+   else if(mark>=70 && mark<=79)
+   {
+       Console.WriteLine("C");
+   }
+   else if(mark>=60 && mark<=69)
+   {
+       Console.WriteLine("D");
+   }
+   else if(mark>=0 && mark<=59)
+   {
+       Console.WriteLine("F");
+   }
+}//main method
+}//class
+       
+If statement speed
+using System;
+
+class Program
+{
+    static void Main(string [] args)
+{
+    Console.WriteLine("Enter Speed");
+    int speed =Convert.ToInt16(Console.ReadLine());
+    
+if (speed>10 && speed<=60)
+{ 
+    Console.WriteLine("No Fine");
+}
+else if (speed>60 && speed<=80)
+{
+   Console.WriteLine("R200 Fine");
+}
+else if (speed>80 && speed<=100)
+{
+    Console.WriteLine("R500 Fine");
+}
+else if (speed>100 && speed<=120)
+{
+    Console.WriteLine("R1000 Fine");
+}
+else
+{
+    Console.WriteLine("JAIL");
+}
+
+
+}//main method
+}//class
+
+Makeup receipt
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+{
+
+    Console.WriteLine("WELCOME TO EMMA's Online Store:");
+
+Console.WriteLine("Enter Lipstick Price: ");
+double lipstickPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Lipstick");
+int lipstickQty = Convert.ToInt16(Console.ReadLine());
+
+double lipstickTot = lipstickPrice*lipstickQty;
+
+Console.WriteLine("Enter Mascara Price: ");
+double mascaraPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Mascara");
+int mascaraQty = Convert.ToInt16(Console.ReadLine());
+
+double mascaraTot = mascaraPrice*mascaraQty;
+
+Console.WriteLine("Enter Foundation Price:");
+double foundationPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Foundation");
+int foundationQty = Convert.ToInt16(Console.ReadLine());
+
+double foundationTot = foundationPrice*foundationQty;
+
+Console.WriteLine("Enter Concealer Price:");
+double concealerPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Concealer");
+int concealerQty = Convert.ToInt16(Console.ReadLine());
+
+double concealerTot = concealerPrice*concealerQty;
+
+Console.WriteLine("Enter EyeShadow Price:");
+double eyeshadowPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Eyeshadow");
+int eyeshadowQty = Convert.ToInt16(Console.ReadLine());
+
+double eyeshadowTot = eyeshadowPrice*eyeshadowQty;
+
+Console.WriteLine("Enter Eyeliner Price:");
+double eyelinerPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Eyeliner");
+int eyelinerQty = Convert.ToInt16(Console.ReadLine());
+
+double eyelinerTot = eyelinerPrice*eyelinerQty;
+
+Console.WriteLine("Enter Powder Price:");
+double powderPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Powder");
+int powderQty = Convert.ToInt16(Console.ReadLine());
+
+double powderTot = powderPrice*powderQty;
+
+Console.WriteLine("Enter Bronzer Price:");
+double bronzerPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: Bronzer");
+int bronzerQty = Convert.ToInt16(Console.ReadLine());
+
+double bronzerTot = bronzerPrice*bronzerQty;
+
+Console.WriteLine("Enter MakeupBag Price:");
+double makeupbagPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: MakeupBag");
+int makeupbagQty = Convert.ToInt16(Console.ReadLine());
+
+double makeupbagTot = makeupbagPrice*makeupbagQty;
+
+Console.WriteLine("Enter MakeupBrushes Price:");
+double makeupbrushesPrice = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Enter Quantity: MakeupBrushes");
+int makeupbrushesQty = Convert.ToInt16(Console.ReadLine());
+
+double makeupbrushesTot = makeupbrushesPrice*makeupbrushesQty;
+
+
+Console.WriteLine("Lipstick {0}----R{1}",lipstickQty,lipstickPrice);
+Console.WriteLine("Mascara {0}----R{1}",mascaraQty,mascaraPrice);
+Console.WriteLine("Foundation {0}----R{1}",foundationQty,foundationPrice);
+Console.WriteLine("Concealer {0}---R{1}",concealerQty,concealerPrice);
+Console.WriteLine("Eyeshadow {0}---R{1}",eyeshadowQty,eyeshadowPrice);
+Console.WriteLine("Eyeliner {0}---R{1}",eyelinerQty,eyelinerPrice);
+Console.WriteLine("Powder {0}--R{1}",powderQty,powderPrice);
+Console.WriteLine("Bronzer {0}---R{1}",bronzerQty,bronzerPrice);
+Console.WriteLine("MakeupBag {0}---R{1}",makeupbagQty,makeupbagPrice);
+Console.WriteLine("MakeupBrushes {0}----R{1}",makeupbrushesQty,makeupbrushesPrice);
+
+
+double totalPrice = (lipstickTot)+(mascaraTot)+(foundationTot)+(concealerTot)+(eyeshadowTot)+(eyelinerTot)+(powderTot)+(bronzerTot)+(makeupbagTot)+(makeupbrushesTot);
+Console.WriteLine("Total Price: R{0}",totalPrice);
+
+double vat = totalPrice*15/100;
+Console.WriteLine("VAT: R{0}",vat);
+
+
+}//main method
+
+}//class
+
+Percentage marks
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+{
+    Console.WriteLine("Enter mark for English:");
+    double m1 = Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Mathematics:");
+    double m2 = Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Science:");
+    double m3 = Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Economics:");
+    double m4 = Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("Enter mark for Accounting:");
+    double m5 = Convert.ToDouble(Console.ReadLine());
+
+    
+    double sum = m1+m2+m3+m4+m5;
+
+    double total = sum/500 * 100;
+    
+    
+   if(total>=0 && total<=49)
+    {
+        Console.WriteLine("You got {0}%----F",total);
+    }
+    else if(total>=50 && total<=59)
+    {
+        Console.WriteLine("You got {0}%----E",total);
+    }
+    else if(total>=60 && total<=69)
+    {
+        Console.WriteLine("You got {0}%----D",total);
+    }
+
+    else if(total>=70 && total<=79)
+    {
+        Console.WriteLine("You got {0}%---C",total);
+    }
+
+ else if(total>=80 && total<=89)
+    {
+        Console.WriteLine("You got {0}%---B",total);
+    }
+     else if(total>=90 && total<=100)
+    {
+        Console.WriteLine("You got {0}%---A",total);
+    }
+    
+
+}//main method
+
+}//class
+
+Polymorphism and Method Overloading
+using System;
+
+class Shape
+{
+    public void Draw()
+    {
+    Console.WriteLine("Drawing a shape");
+    }
+    public void Draw(int width, int height)
+    {
+Console.WriteLine("drawing a shape with width{0} and height{1}",width,height);
+    }
+}//shape
+
+
+class Circle : Shape
+{
+public void Draw(int radius)
+    {
+    Console.WriteLine("Drawing shape with radius {0}", radius);
+    }
+public void area(int radius)
+    {
+    double area =3.142*(radius*radius);
+    Console.WriteLine("The Area is {0}m sqaured",area);
+    }
+public void diameter(int radius)
+    {
+    double diameter = radius *2;
+    Console.WriteLine("The Diameter is {0}m",diameter);
+    }
+}//circle
+
+
+class Program
+{
+    static void Main(string [] args)
+{
+    
+Shape s = new Shape ();
+Circle circ = new Circle ();
+
+s.Draw();
+s.Draw(10,20);
+circ.Draw();
+circ.Draw(5);
+circ.area(2);
+circ.diameter(3);
+
+Console.ReadLine();
+}//main method
+}//class
+
+StreamWriter
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string []args)
+    {
+        string filepath = "Username , password, age and email address";
+
+        using(StreamWriter sw = new StreamWriter(filepath))
+        {
+            Console.WriteLine("Enter your username: ");
+            string username = Console.ReadLine();
+
+            Console.WriteLine("Enter your password: ");
+            string password = Console.ReadLine();
+
+            Console.WriteLine("Enter your email address: ");
+            string email = Console.ReadLine();
+
+            Console.WriteLine("Enter the year you were born: ");
+            int yearOfbirth = Convert.ToInt16(Console.ReadLine());
+
+            int age = 2023 - yearOfbirth;
+            
+            Console.WriteLine("Enter Gender Male/Female:" );
+            string Gender = Console.ReadLine();
+
+            Console.WriteLine("Enter Your ID number");
+            string ID = Console.ReadLine();
+
+           
+            sw.WriteLine("Your username is: {0}",username);
+            sw.WriteLine("Your password is: {0}",password);
+            sw.WriteLine("Your email address is: {0}",email);
+            sw.WriteLine("Your age is: {0}",age);
+            sw.WriteLine("Gender: {0}",Gender);
+            sw.WriteLine("Your identification number is: {0}",ID);
+            Console.WriteLine();
+
+
+        }//
+
+        using(StreamReader sr = new StreamReader(filepath))
+        {
+            string line;
+            Console.WriteLine("Reading file : {0}",filepath);
+
+            while((line = sr.ReadLine()) != null)
+            {
+                Console.WriteLine(line);
+            }
+        }
+        Console.WriteLine("Read file {0} complete!",filepath);
+        Console.WriteLine();
+
+    }//Main method
+}//class
+
+Quiz
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string []args)
+    {
+        string filepath = "Username , password, age and email address";
+
+        using(StreamWriter sw = new StreamWriter(filepath))
+        {
+            Console.WriteLine("Enter your username: ");
+            string username = Console.ReadLine();
+
+            Console.WriteLine("Enter your password: ");
+            string password = Console.ReadLine();
+
+            Console.WriteLine("Enter your email address: ");
+            string email = Console.ReadLine();
+
+            Console.WriteLine("Enter the year you were born: ");
+            int yearOfbirth = Convert.ToInt16(Console.ReadLine());
+
+            int age = 2023 - yearOfbirth;
+            
+            Console.WriteLine("Enter Gender Male/Female:" );
+            string Gender = Console.ReadLine();
+
+            Console.WriteLine("Enter Your ID number");
+            string ID = Console.ReadLine();
+
+           
+            sw.WriteLine("Your username is: {0}",username);
+            sw.WriteLine("Your password is: {0}",password);
+            sw.WriteLine("Your email address is: {0}",email);
+            sw.WriteLine("Your age is: {0}",age);
+            sw.WriteLine("Gender: {0}",Gender);
+            sw.WriteLine("Your identification number is: {0}",ID);
+            Console.WriteLine();
+
+
+        }//
+
+        using(StreamReader sr = new StreamReader(filepath))
+        {
+            string line;
+            Console.WriteLine("Reading file : {0}",filepath);
+
+            while((line = sr.ReadLine()) != null)
+            {
+                Console.WriteLine(line);
+            }
+        }
+        Console.WriteLine("Read file {0} complete!",filepath);
+        Console.WriteLine();
+
+    }//Main method
+}//class
+
+USING FUNCTIONS
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+    
+{
+    Console.WriteLine("Enter Number 1:");
+    int num1 =Convert.ToInt16(Console.ReadLine());
+    
+    Console.WriteLine("Enter Number 2:");
+    int num2 = Convert.ToInt16 (Console.ReadLine());
+    
+    Console.WriteLine("Sum:{0}",sumMethod(number1,number2));
+    Console.WriteLine("Difference:{0}",differenceMethod(number1,number2));
+    Console.WriteLine("Product:{0}",productMethod(number1,number2));
+    Console.WriteLine("Quotient:{0}",qoutMethod(number1,number2));
+    
+    
+}//main method
+
+static int sumMethod(int num1, int num2)
+{
+    return num1+num2;
+}
+static int differenceMethod (int num1, int num2)
+{
+    return num1-num2;
+}
+static int productMethod(int num1, int num2)
+{
+    return num1*num2;
+}
+static int quotientMethod(int num1, num2)
+{
+    return num1/num2;
+}
+
+STREAMREADER & STREAMWRITER
+using System;
+using System.IO;
+
+class Program
+{
+ 	static void Main(string [] args)
+	{
+		string filepath = "emmatestfile.txt";
+		
+		using(StreamWriter writer = new StreamWriter(filepath))
+{
+	writer.WriteLine("My name is emma");
+	writer.WriteLine("I am 23 years old");
+	witer.WriteLine("My favourite colour is nude");
+}
+
+	using(StreamReader reader = new StreamWriter(filepath))
+{
+	string line;
+	Console.WriteLine("Reading from the file: {0}", filepath);
+	
+	while((line = reader.ReadLine()) !=null)
+	{
+	Console.WriteLine(line);
+}
+Console.WriteLine(File Operations completed.");
+}
+}//main method
+}//class
+
+VOTING AGE
+
+using System;
+
+class Program
+{
+	static void Main(String [] args)
+{
+
+	int currentYear = 2023;
+
+	Console.WriteLine ("Enter year of Birth:");
+	int yearOfBirth = Convert.ToInt16 (Console.ReadLine());
+
+	int age = currentYear-yearOfBirth;
+	Console.WriteLine("You are {0} years old!",age);
+
+if (age>=18)
+        {
+                Console.WriteLine("You are Eligible to vote!");
+        }
+        else
+        {
+                Console.WriteLine("You are Underage - Can't vote");
+        }
+}//main method
+}//class
+
+WRITING ID TO TEXT FILE
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string [] args)
+    {
+
+       string filepath = "details.txt";
+
+       using(StreamWriter sw = new StreamWriter(filepath))
+        {
+
+        Console.WriteLine("Enter 13 Digit ID Number:");
+        string id = Console.ReadLine();
+	
+
+        sw.WriteLine(id);
+
+        string first6 = id.Substring(0,6);
+
+        int year = Convert.ToInt16(first6.Substring(0,2));
+
+        string y = first6.Substring(0,2);
+        sw.WriteLine("Year of Birth {0}",y);
+
+        string month = first6.Substring(2,2);
+        int mnth = Convert.ToInt16(month);
+        sw.WriteLine("Month of Birth {0}",month);
+
+        string day = first6.Substring(4,2);
+        sw.WriteLine("Day of Birth {0}",day);
+
+        string yr = year + " ";
+
+        if(year >= 0 && year <=23)
+        {
+            yr = "20" + "0" + year;
+        }
+        else if(year <= 99)
+        {
+            yr = "19"+ year;
+        }
+       
+       sw.WriteLine("Your birthday is {0}/{1}/{2}",day,month,y);
+
+    
+
+       switch(mnth)
+            {
+            case 01 : sw.WriteLine("Your birthday is on {0} January {1}", day, yr); break;
+            case 02 : sw.WriteLine("Your birthday is on {0} February {1}", day, yr); break;
+            case 03 : sw.WriteLine("Your birthday is on {0} March {1}", day, yr); break;
+            case 04 : sw.WriteLine("Your birthday is on {0} April {1}", day, yr); break;
+            case 05 : sw.WriteLine("Your birthday is on {0} May {1}", day, yr); break;
+            case 06 : sw.WriteLine("Your birthday is on {0} June {1}", day, yr); break;
+            case 07 : sw.WriteLine("Your birthday is on {0} July {1}", day, yr); break;
+            case 08 : sw.WriteLine("Your birthday is on {0} August {1}", day, yr); break;
+            case 09 : sw.WriteLine("Your birthday is on {0} September {1}",day, yr); break;
+            case 10 : sw.WriteLine("Your birthday is on {0} October {1}", day, yr); break;
+            case 11 : sw.WriteLine("Your birthday is on {0} November {1}", day, yr); break;
+            case 12 : sw.WriteLine("Your birthday is on {0} December {1}", day, yr); break;
+       
+             }//sw
+        }
+        
+       using(StreamReader sr = new StreamReader(filepath))
+       {
+    	string line;
+	Console.WriteLine("Reading file : {0}",filepath);
+	
+	while((line = sr.ReadLine()) !=null)
+	{
+		Console.WriteLine(line);
+    }
+
+	Console.WriteLine("Read file {0} complete!", filepath);
+	
+       }   
+
+
+    
+    }//main method
+}//class
+
+SIMPLE TASK MANAGER
+
+using System;
+
+class Program
+{
+    static void Main(String [] args)
+{
+    Console.WriteLine("Simple Task Manager");
+
+string Arrtasks [] = new string[100];
+int taskCount = 0;
+
+while(true)
+{ 
+    Console.WriteLine("Task List");
+    Console.WriteLine("Choose option 1-4:");
+    Console.WriteLine("1. Add Task");
+    Console.WriteLine("2. Mark Task as Completed");
+    Console.WriteLine("3. View Tasks");
+    Console.WriteLine("4. Exit");
+
+}//
+string option = Console.ReadLine();
+switch (option)
+{
+    case 1: AddTask();
+            break;
+    case 2: MarkTaskCompleted();
+            break;
+    case 3: ViewTasks();
+            break;
+    case 4: Exit();
+
+    default : Console.WriteLine("Invalid option. Please try again");
+                break;
+}//
+
+static void AddTask()
+{
+    Console.WriteLine("Enter task:");
+    string task = Console.ReadLine();
+    Console.WriteLine("Task Added successfully!");
+}
+
+static void ViewTasks()
+{
+    Console.WriteLine("Tasks:");
+
+    if(taskCount == 0)
+    {
+        Console.WriteLine("No tasks avaliable");
+    } 
+}
+
+static void MarkTaskCompleted()
+{
+    Console.WriteLine("Task Completed");
+}
+
+static void Exit()
+{
+    Console.WriteLine("Tasks Successfully Managed!!");
+}
+
+}//main method
+}//class
+
+
+
